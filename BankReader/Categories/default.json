@@ -1,0 +1,74 @@
+[
+  {
+    "Category": "Polderbelasting",
+    "StringExpression": "description.Contains(\"watering de burggravestroom\")"
+  },
+  {
+    "Category": "Kleding / schoenen",
+    "StringExpression": "description.Contains(\"esprit\") || description.Contains(\"brantano\") || description.Contains(\"c&a\") || description.Contains(\"paleis\") || description.Contains(\"l&l\") || description.Contains(\"jbc\") || description.Contains(\"zeeman\") || description.Contains(\"witte wolk\")"
+  },
+  {
+    "Category": "Literatuur",
+    "StringExpression": "description.Contains(\"st. boekhandel\") || description.Contains(\"boekhandel\")"
+  },
+  {
+    "Category": "Dokter / verzorging",
+    "StringExpression": "description.Contains(\"apoth\") || description.Contains(\"dokter\")"
+  },
+  {
+    "Category": "Bankrekening",
+    "StringExpression": "(description.Contains(\"verzendingskosten\") && description.Contains(\"\"))"
+  },
+  {
+    "Category": "Sparen",
+    "StringExpression": "description.Contains(\"sparen\")"
+  },
+  {
+    "Category": "Inrichting",
+    "StringExpression": "description.Contains(\"ikea\") || description.Contains(\"brico\") || description.Contains(\"deschacht\") || description.Contains(\"aveve\") || description.Contains(\"sedia\") || description.Contains(\"weba\") || description.Contains(\"hubo\")"
+  },
+  {
+    "Category": "Cadeaus",
+    "StringExpression": "description.Contains(\"verjaardag\") || description.Contains(\"cadeau\") || description.Contains(\"bart smit\")"
+  },
+  {
+    "Category": "Sparen",
+    "StringExpression": "description.Contains(\"sparen\")"
+  },
+  {
+    "Category": "Boodschappen",
+    "StringExpression": "description.Contains(\"okay\") || description.Contains(\"smatlch\") || description.Contains(\"colruyt\") || description.Contains(\"aldo\") || description.Contains(\"family drive\") || description.Contains(\"spar\")"
+  },
+  {
+    "Category": "Pensioensparen",
+    "StringExpression": "description.Contains(\"pensioensparen\")"
+  },
+  {
+    "Category": "Brandstof",
+    "StringExpression": "description.Contains(\"avia\") || description.Contains(\"lukoil\") || description.Contains(\"q8\") || description.Contains(\"total\")"
+  },
+  {
+    "Category": "Stroom/water/gas",
+    "StringExpression": "description.Contains(\"electrabel\") || description.Contains(\"tmvw\") || description.Contains(\"vmvw\") || description.Contains(\"watervoorziening\") || description.Contains(\"essent\") || description.Contains(\"eneco\") || description.Contains(\"watergroep\")"
+  },
+  {
+    "Category": "Internet/TV",
+    "StringExpression": "description.Contains(\"telenet\") || description.Contains(\"belgacom\")"
+  },
+  {
+    "Category": "Geldopname",
+    "StringExpression": "description.Contains(\"opvraging\") && description.Contains(\"kaart\")"
+  },
+  {
+    "Category": "Overige inkomsten",
+    "StringExpression": "description.Contains(\"kinderbijslagfonds\") || description.Contains(\"r.v.a.\")"
+  },
+  {
+    "Category": "Parkeren",
+    "StringExpression": "description.Contains(\"vinci\") || description.Contains(\"parking reep\") || description.Contains(\"parking\") || description.Contains(\"parkeren\")"
+  },  
+  {
+    "Category": "Vrije tijd",
+    "StringExpression": "description.Contains(\"kinepolis\")"
+  },
+]

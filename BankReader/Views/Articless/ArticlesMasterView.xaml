@@ -1,0 +1,42 @@
+<Views:AucxisMasterView x:Class="Aucxis.PFish.Client.Modules.Incomes.Views.Articles.ArticlesMasterView"
+                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                        xmlns:irad="http://schemas.ipasoftware.com/irad/2/client"
+                        xmlns:Views="clr-namespace:Aucxis.PFish.Client.Common.Views;assembly=Aucxis.PFish.Client.Common"
+                        xmlns:ac="http://schemas.aucxis.com/irad/controls"
+                        xmlns:Master="clr-namespace:Aucxis.PFish.Client.Common.Controls.Ribbon.Master;assembly=Aucxis.PFish.Client.Common"
+                        xmlns:Common="clr-namespace:Aucxis.PFish.Client.Common;assembly=Aucxis.PFish.Client.Common"
+                        xmlns:pfControls="http://schemas.aucxis.com/pfish/controls"
+                        Title="{irad:Localized Aucxis.PFish.Client.Modules.Incomes:localization:Articles}">
+    <irad:MasterView.MasterItemTemplate>
+        <DataTemplate>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock><Run Text="{Binding DisplayMember}" /></TextBlock>
+            </StackPanel>
+        </DataTemplate>
+    </irad:MasterView.MasterItemTemplate>
+    <irad:MasterView.GridView>
+        <irad:DataGridView>
+            <irad:DataGridView.GridColumns>
+				<irad:DataColumnDefinition Header="{irad:Localized Aucxis.PFish.Client.Common:localization:Dummy}"
+											DataMemberBinding="{Binding Dummy}"
+											IsSortable="True" />
+            </irad:DataGridView.GridColumns>
+        </irad:DataGridView>
+    </irad:MasterView.GridView>
+    <Views:AucxisMasterView.RibbonTabs>
+        <ac:RibbonTab KeyTip="H" Header="{irad:Localized Aucxis.PFish.Client.Common:localization:AucxisRibbonTabHome}">
+            <Master:RibbonGroupMasterCrud />
+        </ac:RibbonTab>
+        <ac:RibbonTab KeyTip="F" Header="{irad:Localized Aucxis.PFish.Client.Common:localization:AucxisRibbonTabFilter}">
+            <Master:RibbonGroupMasterSearchActions />
+            <Master:RibbonGroupMasterSearch />
+        </ac:RibbonTab>
+        <ac:RibbonTab KeyTip="I" Header="{irad:Localized Aucxis.PFish.Client.Common:localization:AucxisRibbonTabExtra}">
+            <Master:RibbonGroupMasterClearFilter />
+            <Master:RibbonGroupMasterSettingsCrud />
+            <Master:RibbonGroupMasterSettingsProfiles />
+        </ac:RibbonTab>
+    </Views:AucxisMasterView.RibbonTabs>
+</Views:AucxisMasterView>
