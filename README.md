@@ -43,3 +43,5 @@ You can use any C# string expression in the `StringExpression` property. The app
 ```
 
 So the above expression will match any line from the exported file which contains `aldi` or `lidl`.
+
+**NOTE: You can add as many json files as you want. All the files will be used in the processing.**
